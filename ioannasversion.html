@@ -9,10 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f8f9fa;
+            color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #ff4d4d; /* Κόκκινο */
             color: white;
             text-align: center;
             padding: 20px;
@@ -28,7 +29,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #333;
+            color: #ff4d4d; /* Κόκκινο */
         }
         p, li {
             color: #555;
@@ -36,13 +37,27 @@
         ul {
             padding-left: 20px;
         }
-        .contact-info {
-            background-color: #e9f7e9;
-            padding: 15px;
-            border-radius: 5px;
+        a {
+            color: #ff4d4d; /* Κόκκινο */
+            text-decoration: none;
+            font-weight: bold;
         }
-        .contact-info p {
-            margin: 5px 0;
+        a:hover {
+            text-decoration: underline;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: #ff4d4d; /* Κόκκινο */
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .button-link:hover {
+            background-color: #e64545; /* Σκούρο κόκκινο */
         }
     </style>
 </head>
@@ -113,9 +128,10 @@
 
     <section>
         <h2>Αίτηση - Αποστολή Βιογραφικού</h2>
-        <p>Αν ενδιαφέρεστε για την παρούσα θέση, σας ενθαρρύνουμε να υποβάλλετε το βιογραφικό σας στο παρακάτω link:</p>
-        <p><a href="https://apply.smartcv.co/papadopoulou/apply/5jjn">Υποβολή Βιογραφικού</a></p>
+        <p>Αν ενδιαφέρεστε για την παρούσα θέση, σας ενθαρρύνουμε να υποβάλλετε το βιογραφικό σας στον παρακάτω σύνδεσμο:</p>
+        <a class="button-link" href="https://apply.smartcv.co/papadopoulou/apply/5jjn" target="_blank">Υποβολή Βιογραφικού</a>
         <p>Οι σύμβουλοί μας θα επικοινωνήσουν με τους υποψηφίους που πληρούν τις απαιτήσεις του προφίλ για να κανονίσουν μια συνέντευξη.</p>
     </section>
 </body>
 </html>
+
